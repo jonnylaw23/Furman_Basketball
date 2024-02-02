@@ -18,13 +18,13 @@
         }
 
         header {
-            background-color: #582C83; /* Purple accent color */
+            background-color: #582C83;
             color: white;
             padding: 1em;
         }
 
         img {
-            max-width: 20%; /* Smaller image */
+            max-width: 20%;
             height: auto;
             margin: .2em 0;
         }
@@ -37,43 +37,43 @@
 
         #left-image,
         #right-image {
-            max-width: 25%; /* Adjusted size to be a little bigger */
+            max-width: 25%;
             height: auto;
-            margin: 0 1em; /* Adjusted margin to move the images closer to the logo */
+            margin: 0 1em;
         }
 
         nav {
-            background-color: #582C83; /* Purple accent color */
+            background-color: #582C83;
             padding: .2em;
             margin-top: .2em;
-            text-align: center; /* Center the links horizontally */
+            text-align: center;
         }
 
         h2 {
-            color: white; /* White font color */
-            background-color: #582C83; /* Purple accent color */
-            padding: 0.5em; /* Adjust padding for better appearance */
-            display: block; /* Change display property to block */
-            margin-bottom: 0.5em; /* Adjust margin for spacing */
-            text-align: center; /* Center the h2 text horizontally */
+            color: white;
+            background-color: #582C83;
+            padding: 0.5em;
+            display: block;
+            margin-bottom: 0.5em;
+            text-align: center;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            padding: 0.5em 1.25em; /* Equal padding for all links */
+            padding: 0.5em 1.25em;
             margin: 0 1em;
             border-radius: 4px;
-            width: 250px; /* Fixed width for all links */
+            width: 250px;
             max-width: 25%;
-            background-color: rgba(186, 85, 211, 0.5); /* Lighter Purple with 75% opacity */
-            font-size: 1.2em; /* Larger font size */
-            display: inline-block; /* Display links inline */
-            margin-bottom: 0.5em; /* Adjust margin for spacing */
+            background-color: rgba(186, 85, 211, 0.5);
+            font-size: 1.2em;
+            display: inline-block;
+            margin-bottom: 0.5em;
         }
 
         nav a:hover {
-            background-color: rgba(138, 43, 226, 0.7); /* Lighter Purple on hover with 70% opacity */
+            background-color: rgba(138, 43, 226, 0.7);
         }
 
         section {
@@ -81,7 +81,22 @@
         }
 
         section p {
-            margin: 0.2em 0 0.5em; /* Adjust vertical margin for the <p> element */
+            margin: 0.2em 0 0.5em;
+        }
+
+        /* Add a new class for styling the stats links container */
+        .stats-links {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* Adjusted styling for smaller screens */
+        @media screen and (max-width: 600px) {
+            nav a {
+                width: 100%; /* Full width on smaller screens */
+                max-width: none;
+            }
         }
     </style>
 </head>
@@ -107,8 +122,11 @@
         <nav>
             <h2>Links to Stats:</h2>
             <a href="https://jonnylaw23.github.io/Furman_Basketball/games">All Game Stats 2023-2024</a><br>
-            <a href="https://jonnylaw23.github.io/Furman_Basketball/conference">Conference Game Stats 2023-2024</a><br>
-            <a href="https://jonnylaw23.github.io/Furman_Basketball/lastfive">Last 5 Games Stats 2023-2024</a><br>
+            <!-- Combine "Conference Game Stats" and "Last 5 Games Stats" into one line -->
+            <div class="stats-links">
+                <a href="https://jonnylaw23.github.io/Furman_Basketball/conference">Conference Game Stats 2023-2024</a>
+                <a href="https://jonnylaw23.github.io/Furman_Basketball/lastfive">Last 5 Games Stats 2023-2024</a>
+            </div>
             <a href="https://jonnylaw23.github.io/Furman_Basketball/practices">Practice Stats 2023-2024</a><br>
             <a href="https://jonnylaw23.github.io/Furman_Basketball/lastyear">Practice Stats 2022-2023</a>
         </nav>
