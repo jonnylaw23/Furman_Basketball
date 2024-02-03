@@ -96,6 +96,13 @@
             margin: 0.5em; /* Adjust margin for individual links */
         }
 
+        /* Add a new class to target specific links and adjust margin */
+        .stats-links .conference,
+        .stats-links .non-conference,
+        .stats-links .last-five {
+            margin: 0.5em;
+        }
+
         /* Adjusted styling for smaller screens */
         @media screen and (max-width: 600px) {
             nav a {
@@ -128,9 +135,9 @@
             <h2>Links to Stats:</h2>
             <a href="https://jonnylaw23.github.io/Furman_Basketball/games">Game Stats 2023-2024</a><br>
             <div class="stats-links">
-                <a href="https://jonnylaw23.github.io/Furman_Basketball/nonconference">Non-Conference</a>
-                <a href="https://jonnylaw23.github.io/Furman_Basketball/conference">Conference</a>
-                <a href="https://jonnylaw23.github.io/Furman_Basketball/lastfive">Last Five</a>
+                <a href="https://jonnylaw23.github.io/Furman_Basketball/nonconference" class="non-conference">Non-Conference</a>
+                <a href="https://jonnylaw23.github.io/Furman_Basketball/conference" class="conference">Conference</a>
+                <a href="https://jonnylaw23.github.io/Furman_Basketball/lastfive" class="last-five">Last Five</a>
             </div>
             <a href="https://jonnylaw23.github.io/Furman_Basketball/practices">Practice Stats 2023-2024</a><br>
             <a href="https://jonnylaw23.github.io/Furman_Basketball/lastyear">Practice Stats 2022-2023</a>
@@ -145,6 +152,7 @@
 </body>
 
 </html>
+
 
 
 
