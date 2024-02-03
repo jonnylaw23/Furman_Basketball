@@ -96,11 +96,10 @@
             margin: 0.5em; /* Adjust margin for individual links */
         }
 
-        /* Add a new class to target specific links and adjust margin */
-        .stats-links .conference,
-        .stats-links .non-conference,
-        .stats-links .last-five {
-            margin: 0.5em;
+        /* Adjust margin for specific links */
+        .stats-links a:nth-child(2),
+        .stats-links a:nth-child(3) {
+            margin-right: 0; /* Remove right margin for Non-Conference and Last Five */
         }
 
         /* Adjusted styling for smaller screens */
